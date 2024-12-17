@@ -1,0 +1,132 @@
+:root {
+  --background: #141415;
+  --red: #df040a;
+  --orange: #ff6b27;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  background-color: var(--background);
+}
+
+.barIcon {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Espaço entre o ícone e o texto */
+  position: relative;
+  cursor: pointer;
+}
+
+/* Estilo do texto da li */
+.barIcon li {
+  font-size: 16px;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.barIcon::before {
+  content: "";
+  position: absolute;
+  border-radius: 20px;
+  left: -10px; /* Ajuste para posicionar ao lado esquerdo da li */
+  top: 0;
+  width: 5px; /* Largura da barra */
+  height: 0; /* Inicialmente invisível */
+  background-color: var(--orange); /* Cor da barra */
+  transition: height 0.3s ease; /* Animação suave */
+}
+
+.logo > img {
+  transition: 0.3s ease;
+}
+
+.logo:hover img {
+  filter: brightness(0) saturate(100%) invert(55%) sepia(98%) saturate(1500%) hue-rotate(-13deg) brightness(96%) contrast(100%) invert() ;
+}
+
+/* Efeito de hover */
+.barIcon:hover::before {
+  height: 100%; /* Barra aparece de cima para baixo */
+}
+
+.barIcon:hover li {
+  color: var(--orange); /* Destaca o texto ao passar o mouse */
+}
+
+.barIcon img {
+  transition: filter 0.5s ease; /* Transição suave para o efeito */
+}
+
+/* Cor da imagem ao passar o mouse */
+.barIcon:hover img {
+  filter: brightness(0) saturate(100%) invert(55%) sepia(98%) saturate(1500%) hue-rotate(-13deg) brightness(96%) contrast(100%);
+}
+
+.logo {
+  filter: invert();
+}
+
+.headerIcons {
+  filter: invert();
+}
+
+input::placeholder {
+  color: #fff;
+}
+
+input {
+  background-color: #ffffff30;
+}
+
+.icon {
+  height: 40px;
+  width: 40px;
+  background-color: #00000030;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+#user {
+  filter: invert();
+  outline: 1px solid var(--orange);
+}
+
+li {
+  cursor: pointer;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.item2 {
+}
+
+.grid-container {
+  display: grid;
+  gap: 20px;
+}
+
+
+.thumbnails {
+  grid-column-start: 2;
+  margin-top: 20px;
+  gap: 10px;
+  display: flex;
+}
+
+.blurred-image {
+  align-self: flex-start;
+  filter: blur(7px);
+  grid-row-start: 0;
+}

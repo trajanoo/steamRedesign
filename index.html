@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="flex flex-col h-screen">
+  <header class="flex justify-between m-5">
+    <div class="logo">
+      <img src="assets/Steam_2016_logo_black.svg.png" width="120px" alt="">
+    </div>
+
+    <input class="h-[40px] w-[30vw] pl-3 rounded-lg" type="text" placeholder="Search orders">
+
+    <div class="headerIcons flex space-x-5">
+      <div class="icon"></div>
+      <div class="icon"></div>
+      <div id="user" class="icon"></div>
+    </div>
+  </header>
+  
+  <div class="flex">
+  <div class="side-bar w-[250px]">
+    <ul class="text-white flex flex-col justify-between h-screen ml-[50px] mt-[60px]">
+      <div class="main space-y-10">
+
+      <div class="barIcon flex space-x-4">
+      <img id="game" src="assets/joystick.png" width="25px" alt="">
+      <li class="text-[--orange]">Game store</li>
+      </div>
+
+      <div class="barIcon flex space-x-4">
+      <img class="invert" src="assets/music-library.png" width="20vw" alt="">
+      <li>Library</li>
+      </div>
+
+      <div class="barIcon flex space-x-4">
+      <img class="invert" src="assets/chat.png" width="20px" alt="">
+      <li>Community</li>
+      </div>
+
+      <div class="barIcon flex space-x-4">
+      <img class="invert" src="assets/account.png" width="20px" alt="">
+      <li>Friends</li>
+    </div>
+
+    </div>
+
+      <div class="settings mb-[25vh] space-y-5">
+
+        <div class="barIcon flex space-x-4">
+        <img class="invert" src="assets/settings.png" width="25px" alt="">
+        <li>Settings</li>
+        </div>
+
+        <div class="barIcon flex space-x-4">
+        <img class="invert" src="assets/help.png" width="25px" alt="">
+        <li>Help</li>
+      </div>
+
+
+      </div>
+    </ul>
+  </div>
+</div>
+</body>
+</html>
